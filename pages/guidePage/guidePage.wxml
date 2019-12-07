@@ -1,24 +1,26 @@
 <!--先导片-->
+
+
+
 <view class="container">
 
 
-<view>
-<!--主页标语-->
-<view class="slogen">
-<text class=''>{{slogen}}</text>
-</view>
-<!--品牌名称-->
-<view class="brand">
-<text class=''>{{brand}}</text>
-</view>
-</view>
+  <view>
+      <!--主页标语-->
+      <view class="slogen">
+        <text class=''>{{slogen}}</text>
+      </view>
+      <!--品牌名称-->
+      <view class="brand">
+          <text class=''>{{brand}}</text>
+      </view>
+  </view>
 
+  
 
-<view class="usermotto">
-<text class="user-motto">{{motto}}</text>
-</view>
+  <view class="userinfo">
+     <button size="mini" class="login"  bindtap="logBtn"> 点击进入 </button>
 
-<view class="userinfo">
 
 <!--open-type="getUserInfo" 获取用户信息，可以从bindgetuserinfo回调中获取到用户信
 wx:if 标签wx:if是用来判断某个条件是否成立，如果返回值为true，则渲染这个元素，否则不渲染
@@ -32,8 +34,11 @@ wx:if 标签wx:if是用来判断某个条件是否成立，如果返回值为tru
 wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo"
 bindgetuserinfo="getUserInfo" bindtap=""> 登录 </button>-->
 
-<button size="mini" class="login" 
-bindtap="logBtn"> 点击进入 </button>
+     
+
+
+  
+
 
 <!--block并不是一个组件，它仅仅是一个包装元素，不会在页面中做任何渲染，只接受控制属性-->
 <!--一次性判断多个组件标签-->
@@ -49,7 +54,7 @@ mode="cover"></image>
 <text class="userinfo-nickname">{{userInfo.nickName}}</text>
 </block>-->
 
-</view>
+  </view>
 
 
 

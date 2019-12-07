@@ -37,11 +37,7 @@ Page({
     })
   },
 
-  /**此方法无用 
-  onLaunch: function () {
-    // 隐藏原生的tabbar
-    wx.hideTabBar()
-  }, */
+
 
   //点击头像 跳转事件处理函数
   bindViewTap: function () {

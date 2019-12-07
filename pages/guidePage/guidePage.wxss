@@ -1,8 +1,11 @@
 /**用户登录信息 包括登录按钮 登录后图片**/
+/**流式布局 灵活的项目将垂直显示，正如一个列一样。**/
 .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  margin-top: 200px;
 }
 /**用户登录后图片  头像图片**/
 .userinfo-avatar {
@@ -17,9 +20,6 @@
   color: #aaa;
 }
 
-.usermotto {
-  margin-top: 200px;
-}
 
 .bottom_btn {
 
