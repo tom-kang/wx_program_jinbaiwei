@@ -1,0 +1,99 @@
+/**用户登录信息 包括登录按钮 登录后图片**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/**用户登录后图片  头像图片**/
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.bottom_btn {
+
+  /**给该view设置这俩属性**/
+   position:fixed; 
+   /**0挨着底部 **/
+   bottom:25px; 
+}
+
+
+.slogen {
+  /**对text元素 margin不起作用**/
+  font-size: 59rpx;
+  color: rgb(77, 75, 75);
+  margin:10px 5px 18px 20px;
+}
+
+.brand {
+  font-size: 32rpx;
+  color: rgb(177, 177, 177);
+  /**文字居中**/
+  text-align: center;
+  
+}
+
+/** 主页 按钮 样式, 设置外边距可使flex布局两个控件有间隙 **/
+.store {
+  color: #fff;
+  background-color: rgb(21, 170, 108);
+  /**简写属性在一个声明中设置所有外边距属性**/
+  /**     上  右   下  左**/
+  margin:10px 5px 15px 20px;
+}
+
+/**登录按钮样式**/
+.login {
+  background-color: rgb(233, 230, 60);
+  color:black;
+}
+
+.phone {
+   font-size: 22rpx;
+   color: rgb(177, 177, 177);
+   /**没起作用**/
+   text-align: right;
+
+   /**给该view设置这俩属性**/
+   position:fixed; 
+   /**0挨着底部 **/
+   bottom:15px; 
+}
+
+/** wxss **/
+/** 修改button默认的点击态样式类**/
+.button-hover {
+  background-color: yellow;
+}
+/** 添加自定义button点击态样式类**/
+.other-button-hover {
+  background-color: blue;
+}
+
+/**按钮换成图片属性备用**/
+.goBack .share{
+  width: 38rpx;
+  height: 36rpx;
+  padding:0 20rpx;
+  position: absolute;
+  right: 32rpx;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  /**必须属性  button设为透明：plain=’true’ button的padding设为：0，border设为：none**/
+  background-size: 38rpx 36rpx;
+  background-repeat:no-repeat;
+  border:none;
+}

@@ -1,0 +1,7 @@
+<!--<view class="back_img">
+<image src='../images/1.png'></image>
+</view>-->
+
+<view class="bg" >
+    <image class="bg-image" src='../images/meat.png' mode="scaleToFill"></image>
+  </view>

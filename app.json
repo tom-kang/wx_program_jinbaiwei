@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/guidePage/guidePage",
+    "pages/main/main",
+    "pages/index/index",
+    "pages/my/my",
+    "pages/find/find",
+    "pages/logs/logs"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "金佰味精品猪肉",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+
+  "tabBar": {
+    "color": "#272636",
+    "selectedColor": "#FFD161",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "iconPath": "pages/images/index.png",
+        "selectedIconPath": "pages/images/index_s.png",
+        "color": "white",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "iconPath": "pages/images/find.png",
+        "selectedIconPath": "pages/images/find_s.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "pages/images/gift.png",
+        "selectedIconPath": "pages/images/gift_s.png",
+        "text": "金佰味"
+      }
+    ]
+  },
+
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

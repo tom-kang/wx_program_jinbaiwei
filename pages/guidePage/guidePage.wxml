@@ -1,0 +1,84 @@
+<!--先导片-->
+<view class="container">
+
+
+<view>
+<!--主页标语-->
+<view class="slogen">
+<text class=''>{{slogen}}</text>
+</view>
+<!--品牌名称-->
+<view class="brand">
+<text class=''>{{brand}}</text>
+</view>
+</view>
+
+
+<view class="usermotto">
+<text class="user-motto">{{motto}}</text>
+</view>
+
+<view class="userinfo">
+
+<!--open-type="getUserInfo" 获取用户信息，可以从bindgetuserinfo回调中获取到用户信
+wx:if 标签wx:if是用来判断某个条件是否成立，如果返回值为true，则渲染这个元素，否则不渲染
+没有获取用户信息 
+-->
+<!--意思如果这个条件没有同时满足 则不出现这个按钮 意思hasUserInfo 是false 同时 canIUse 是true的
+情况下显示此按钮-->
+
+<!--type按钮的样式类型 primary基本的 绿色的一个按钮
+<button size="mini" class="login"
+wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo"
+bindgetuserinfo="getUserInfo" bindtap=""> 登录 </button>-->
+
+<button size="mini" class="login" 
+bindtap="logBtn"> 点击进入 </button>
+
+<!--block并不是一个组件，它仅仅是一个包装元素，不会在页面中做任何渲染，只接受控制属性-->
+<!--一次性判断多个组件标签-->
+
+<!--image mode属性图片裁剪、缩放的模式 
+<block wx:else>-->
+<!--bindgetuserinfo="getUserInfo" 绑定用户信息对象e 里面包含了detail对象
+包含了userinfo对象 其中avatarUrl属性是头像地址
+<text style="font-size:20rpx;color:#00F5FF;">请点击头像</text>
+
+<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}"
+mode="cover"></image>
+<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</block>-->
+
+</view>
+
+
+
+<view class="bottom_btn">
+<!--店铺按钮1-->
+<button class="store" size="{{defaultSize}}" loading="{{loading_f}}"
+disabled="{{disabled}}" bindtap="">
+{{store_name_chengxi}}
+</button>
+
+<!--店铺按钮2-->
+<button class="store" disabled="{{disabled}}" type="">
+{{store_name_chengd}}
+</button>
+
+
+<!--
+<button class="" plain='true'> 
+<image src='../images/1.png' mode='widthFix'></image>
+</button>-->
+
+
+<!--open_type有效值 contact打开客服会话
+<button open-type="contact">联系客服</button>-->
+</view>
+
+<view class="phone">
+<text>{{phone}}</text>
+</view>
+
+
+</view>
